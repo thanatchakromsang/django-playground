@@ -11,6 +11,7 @@ djangorestframework = "*"
 redis = "*"
 requests = "*"
 psycopg2-binary = "*"
+ipython = "*"
 
 [dev-packages]
 flake8 = "*"
