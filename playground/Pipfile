@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+celery = "*"
+django = "*"
+django_celery_beat = "*"
+djangorestframework = "*"
+redis = "*"
+requests = "*"
+psycopg2-binary = "*"
+
+[dev-packages]
+flake8 = "*"
+ipdb = "*"
+pytest = "*"
+
+[requires]
+python_version = "3.7"

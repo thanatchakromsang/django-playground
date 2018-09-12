@@ -1,0 +1,19 @@
+#!/bin/bash
+# Output colors
+NORMAL="\\033[0;39m"
+RED="\\033[1;31m"
+BLUE="\\033[1;34m"
+
+start() {
+  docker-compose up $1 ${*:1}
+}
+
+stop() {
+  docker-compose down ${*:1}
+}
+
+logs() {
+  docker-compose logs --follow
+}
+
+"$@"
