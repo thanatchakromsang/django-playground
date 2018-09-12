@@ -5,15 +5,19 @@ RED="\\033[1;31m"
 BLUE="\\033[1;34m"
 
 start() {
-  docker-compose up $1 ${*:1}
+  docker-compose up $1 ${*:2}
 }
 
 stop() {
-  docker-compose down ${*:1}
+  docker-compose down $1 ${*:2}
 }
 
 logs() {
   docker-compose logs --follow
+}
+
+shell() {
+  docker-compose run --rm $1 python $1/manage.py shell -i ipython
 }
 
 "$@"
