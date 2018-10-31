@@ -1,0 +1,5 @@
+# MAKE A COPY OF THIS FILE AND SAVE AS .env DURING SETUP
+# cp .sample_env .env
+
+
+DATABASE_HOST=postgres
